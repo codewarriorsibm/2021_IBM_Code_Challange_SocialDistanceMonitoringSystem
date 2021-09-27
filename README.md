@@ -11,9 +11,15 @@ Many healthcare organizations, scientists, and medical professionals are searchi
 
 Therefore to overcome the virus spread, by minimizing the physical contacts of humans with the social distancing measures.
 
+To ensure the social distancing protocol in public areas,we developed social distancing detector using YOLOv3 model.It can monitor if the people are keeping a safe distance from each other by analyzing real time video streams.
 
+**FEATURES**
 
-   
+* The output of YOLOv3 object detection is used to compute the centroid of the bounding box.
+* Compute the Euclidean distance between all pairs of centroids.To check, either the      calculated distance comes under the violation set or not.
+* The bounding box's color is formerly initialized as green. If the bounding box comes under the violation set, its color is updated to red.
+* Display information's of total number of social distancing violations, safe count, low risk count, high risk count.
+
 **USE CASE**
 
 * monitor number of people in real time and send alert to operators if distance more than limit.
@@ -24,3 +30,12 @@ Therefore to overcome the virus spread, by minimizing the physical contacts of h
 
 
 
+
+
+
+
+.
+
+
+
+   
